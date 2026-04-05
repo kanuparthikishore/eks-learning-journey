@@ -1,26 +1,17 @@
-# Terraform Variables
-
 variable "aws_region" {
-  description = "The AWS region to deploy to"
+  description = "AWS region"
   type        = string
+  default     = "us-east-1"
 }
-
+ 
 variable "cluster_name" {
-  description = "The name of the EKS cluster"
+  description = "EKS cluster name"
   type        = string
+  default     = "my-eks-cluster"
 }
-
-variable "kubernetes_version" {
-  description = "The version of Kubernetes"
-  type        = string
-}
-
+ 
 variable "environment" {
-  description = "The environment (e.g. dev, prod)"
+  description = "Environment label"
   type        = string
-}
-
-variable "common_tags" {
-  description = "Common tags for resources"
-  type        = map(string)
+  default     = "dev"
 }

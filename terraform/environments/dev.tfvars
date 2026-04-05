@@ -1,8 +1,5 @@
 # Development Environment Configuration
 
-region = "us-west-2"
-cluster_name = "dev-cluster"
-tags = {
-  Environment = "development"
-  Team = "dev-team"
-}
+aws_region   = "us-east-1"
+cluster_name = "my-eks-cluster"
+environment  = "dev"
